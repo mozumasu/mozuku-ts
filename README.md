@@ -95,7 +95,9 @@ devShell に入ると以下が PATH に揃います:
 
 <https://sorafujitani.me/blog/ts-first-step/>
 
-### Step 3: TBD
+### Step 3: Hono
+
+<https://sorafujitani.me/blog/hono-first-step/>
 
 ## トラブルシュート
 
