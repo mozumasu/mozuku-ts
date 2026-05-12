@@ -8,12 +8,8 @@ const addTask = (title) => {
   const task = { id: incrementableId, title: title, isComplete: false }
   tasks.push(task)
 
-  console.log(`追加したにょ
-id: ${incrementableId}
-タイトル: ${title}
-`)
+  console.log(`追加したにょ \nid: ${incrementableId} \nタイトル: ${title}\n`)
 }
-
 const printTask = (task) => {
   const mark = task.isComplete ? "✔" : " "
   console.log(`[${mark}]: ${task.title}`)
@@ -22,8 +18,7 @@ const printTask = (task) => {
 // タスクを表示
 // 入力: Array 出力: Arrayを表示
 const listTask = () => {
-  console.log(`<タスクリスト>
-`)
+  console.log(`<タスクリスト>\n`)
   for (const task of tasks) {
     printTask(task)
   }
