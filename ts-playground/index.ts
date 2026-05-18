@@ -32,11 +32,11 @@ const printTask = (): void => {
 const completeTask = (id: number): void => {
   const completeTaskId = id
   const task = tasks.find((t) => t.id === completeTaskId)
-  if (task != undefined) {
-    task.isComplete = true
-  } else {
+  if (task == undefined)
     console.log("その番号のタスクは無いにょ")
-  }
+    return
+   
+   task.isComplete = true
 }
 
 // Todoを使う
