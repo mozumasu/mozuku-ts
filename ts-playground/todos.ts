@@ -49,3 +49,10 @@ export const completeTask = (id: number): void => {
   }
   task.status = "complete"
 }
+
+// テスト用 Todoのリセット
+export const resetTasks = () => {
+  console.log("todoをリセットするにょ")
+  tasks.length = 0
+  id = 0
+}
